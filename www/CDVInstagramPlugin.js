@@ -39,7 +39,7 @@ function shareDataUrl(dataUrl, caption, callback) {
         },
         function (err) {
             callback && callback(err);
-        }, "Instagram", "share", [imageData, caption]
+        }, "Instagram", "shareAsset", [imageData, caption]
     );
 }
 
