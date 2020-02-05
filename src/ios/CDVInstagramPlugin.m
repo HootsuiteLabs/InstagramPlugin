@@ -53,7 +53,7 @@ static NSString *InstagramId = @"com.burbn.instagram";
 }
 
 
-- (void)share:(CDVInvokedUrlCommand*)command {
+- (void)shareWithDocumentInteractionAPI:(CDVInvokedUrlCommand*)command {
     self.callbackId = command.callbackId;
     self.toInstagram = FALSE;
     NSString    *objectAtIndex0 = [command argumentAtIndex:0];
@@ -94,7 +94,7 @@ static NSString *InstagramId = @"com.burbn.instagram";
 }
 
 
-- (void)shareAsset:(CDVInvokedUrlCommand*)command {
+- (void)share:(CDVInvokedUrlCommand*)command {
     self.callbackId = command.callbackId;
 
     NSData *pngData = [command argumentAtIndex:0];
